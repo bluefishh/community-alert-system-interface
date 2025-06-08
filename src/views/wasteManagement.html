@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/public/styles/styles_waste_management.css">
     <link rel="stylesheet" href="/public/styles/styles_header.css">
+    <link rel="stylesheet" href="/public/styles/custom-swal.css">
 </head>
 
 <body>
@@ -20,8 +21,8 @@
                 <div class="navbar-nav mx-auto">
                     <a class="nav-link mx-1" href="alerts.html">Alertas</a>
                     <a class="nav-link active bg-danger text-white rounded mx-1" href="wasteManagement.html">Gestión de Residuos</a>
-                    <a class="nav-link mx-1" href="">Comercio Local</a>
-                    <a class="nav-link mx-1" href="">Administración</a>
+                    <a class="nav-link mx-1" href="localCommerce.html">Comercio Local</a>
+                    <a class="nav-link mx-1" href="administration.html">Administración</a>
                 </div>
                 <div class="dropdown d-flex align-items-center">
                     <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,7 +33,7 @@
                         <span class="m-3">username</span>
                     </div>
                     <ul class="dropdown-menu mt-2">
-                        <li><a class="dropdown-item" href="">Mi perfil</a></li>
+                        <li><a class="dropdown-item" href="profile.html">Mi perfil</a></li>
                         <li><a class="dropdown-item" href="communities.html">Cambiar comunidad</a></li>
                         <li><a class="dropdown-item" href="/index.html">Cerrar sesión</a></li>
                     </ul>
@@ -149,5 +150,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/public/js/wasteManagement.js"></script>
 </body>
 </html>
