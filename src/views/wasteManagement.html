@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Residuos - Community Alert System</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/styles/styles_waste_management.css">
+    <link rel="stylesheet" href="/public/styles/styles_header.css">
+    <link rel="stylesheet" href="/public/styles/custom-swal.css">
+</head>
+
+<body>
+    <header class="shadow-sm">  
+        <nav class="navbar navbar-expand-lg bg-white py-3">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="/public/img/CAS_without_bg_navbar.png" alt="Logo" width="130" class="me-2">
+                </a>
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link mx-1" href="alerts.html">Alertas</a>
+                    <a class="nav-link active bg-danger text-white rounded mx-1" href="wasteManagement.html">Gestión de Residuos</a>
+                    <a class="nav-link mx-1" href="localCommerce.html">Comercio Local</a>
+                    <a class="nav-link mx-1" href="administration.html">Administración</a>
+                </div>
+                <div class="dropdown d-flex align-items-center">
+                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                        <span class="m-3">username</span>
+                    </div>
+                    <ul class="dropdown-menu mt-2">
+                        <li><a class="dropdown-item" href="profile.html">Mi perfil</a></li>
+                        <li><a class="dropdown-item" href="communities.html">Cambiar comunidad</a></li>
+                        <li><a class="dropdown-item" href="/index.html">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 pt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="mb-4 fw-bold">Horario de recolección</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <table class="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                    <th>Sábado</th>
+                                    <th>Domingo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    5:00 p.m. a 7:00 p.m.
+                                </td>
+                                <td>
+                                    No hay servicio.
+                                </td>
+                                <td>
+                                    5:00 p.m. a 7:00 p.m.
+                                </td>
+                                <td>
+                                    No hay servicio.
+                                </td>
+                                <td>
+                                    5:00 p.m. a 7:00 p.m.
+                                </td>
+                                <td>
+                                    No hay servicio.
+                                </td>
+                                <td>
+                                    No hay servicio.
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold">Campañas de reciclaje</h2>
+                    <button class="btn btn-outline-secondary" id="crear-campannia">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                        </svg> Crear nueva campaña
+                    </button>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3>Recolección de Tapas Plásticas</h3>
+                                <p class="text-muted">Fecha: 27 junio del 2025</p>
+                                <p class="text-muted">Hora: 11:00 a.m.</p>
+                                <p>Campaña de recolección de tapas plásticas para apoyar a niños con cáncer. Cada tapa cuenta.</p>
+                                <p class="text-muted">Lugar: Salón comunal</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3>Jornada de Reciclaje Electrónico</h3>
+                                <p class="text-muted">Fecha: 10 junio del 2025</p>
+                                <p class="text-muted">Hora: 8:00 a.m.</p>
+                                <p>Trae tus equipos electrónicos en desuso como computadores, celulares, cargadores, etc. para su correcta disposición.</p>
+                                <p class="text-muted">Lugar: Parque principal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+
+            <div class="col-lg-4">
+                <h2 class="mb-4 fw-bold">Puntos de reciclaje</h2>
+                
+                    
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3>Centro Comercial Ecoplaza</h3>
+                                <p class="text-muted">Plásticos.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3>Biblioteca Municipal</h3>
+                                <p class="text-muted">Desechos electrónicos, plásticos, papel y vidrio.</p>
+                            </div>
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/public/js/wasteManagement.js"></script>
+</body>
+</html>
